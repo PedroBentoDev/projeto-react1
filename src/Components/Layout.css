@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Body {
+  display: flex;
+  flex: 1;
+}
+
+/* Aside na esquerda */
+.Body > aside,
+.Body > div:first-child {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+
+/* Main ocupa o resto do espaço */
+.Body > main,
+.Body > div:last-child {
+  flex: 1;
+  padding: 1rem;
+  background: linear-gradient(#eee, #ccc); /* fundo do conteúdo principal */
+}
+
+header {
+  background-color: #e44d26; /* cor laranja/vermelha do print */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #e44d26;  /* agora igual ao header */
+  color: white;
+}
